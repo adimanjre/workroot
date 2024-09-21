@@ -12,7 +12,8 @@
 
 <body class="bg-[#6A00FF] overflow-x-hidden">
     <div class="relative">
-        <div class="blur blur-2xl opacity-75 -top-80 -z-10 h-1/6 w-1/2 rounded-full -translate-x-1/2 bg-[#A64AFF] absolute left-1/2"></div>
+        <div class="blur blur-2xl opacity-75 top-80 -z-10 h-1/6 w-1/2 rounded-full  bg-[#A64AFF] absolute -left-1/4"></div>
+        <div class="blur blur-2xl opacity-75 top-32 -z-10 h-1/4 w-1/3 rounded-full  bg-[#A64AFF] absolute -right-1/4"></div>
         <div class="line-group absolute right-10 flex gap-5 opacity-50">
             <div class="h-20 w-px border border-r-white border-dashed"></div>
             <div class="h-40 w-px border border-r-white border-dashed"></div>
@@ -22,140 +23,155 @@
         </div>
         
           <!-- ========== HEADER ========== -->
-          <header class="sticky top-4  inset-x-0 flex container mx-auto px-20 flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-            <nav class="relative w-full bg-white rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2"
-                aria-label="Global">
-                <div class="flex items-center justify-between md:hidden">
-                    <!-- Logo -->
-                    <div class="logo-container flex gap-2 items-center">
-                        <img src="/img/workroot.png" height="50" class="h-8" />
-                        <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
-                    </div>
-                    <!-- End Logo -->
-
-
-                </div>
-
-                <!-- Collapse -->
-                <div id="navbar-collapse"
-                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex items-center justify-between">
-                    <div class="flex items-center justify-between hidden md:inline-block">
-                        <!-- Logo -->
-                        <div class="logo-container flex gap-2 items-center">
-                            <img src="/img/workroot.png" height="50" class="h-8" />
-                            <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
-                        </div>
-                        <!-- End Logo -->
-
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-                        <a class="text-sm text-black hover:text-[#6A00FF] md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="index.html" aria-current="page">Home</a>
-                       
-                            <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
-                                <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-3  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none " aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                    Product
-                                  
-                                  <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929"/>
-                                    </svg>
-                                    
-                                </button>
-                              
-                                <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="/sms.html">
-                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    SMS
-                                  </a>
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="voice.html">
-                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5631 8.6643C13.5631 8.33299 13.8318 8.06435 14.1631 8.06435C14.4944 8.06435 14.763 8.33299 14.763 8.6643C14.763 10.6949 13.9327 12.5405 12.5951 13.878C11.4243 15.0488 9.8642 15.831 8.1315 16.0078V18.5H6.63152V16.0078C4.89882 15.8312 3.3387 15.049 2.16788 13.878C0.830331 12.5403 0 10.6947 0 8.6643C0 8.33299 0.268642 8.06435 0.599954 8.06435C0.931267 8.06435 1.19991 8.33299 1.19991 8.6643C1.19991 10.3636 1.89553 11.9089 3.01617 13.0295C4.13682 14.1502 5.68229 14.8458 7.38161 14.8458C9.08092 14.8458 10.6262 14.1502 11.7468 13.0295C12.8675 11.9089 13.5631 10.3636 13.5631 8.6643ZM7.38161 0.5C5.34063 0.5 3.67079 2.16984 3.67079 4.21081V8.6643C3.67079 10.7053 5.34063 12.3751 7.38161 12.3751C9.42258 12.3751 11.0924 10.7053 11.0924 8.6643V4.21062C11.0924 2.16984 9.42258 0.5 7.38161 0.5Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    Voice
-                                  </a>
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="email.html">
-                                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4545 3.40909C20.4545 2.505 20.0952 1.63773 19.4564 0.998182C18.8168 0.359318 17.9495 0 17.0455 0C13.4168 0 7.03773 0 3.40909 0C2.505 0 1.63773 0.359318 0.998182 0.998182C0.359318 1.63773 0 2.505 0 3.40909C0 5.78591 0 9.21409 0 11.5909C0 12.495 0.359318 13.3623 0.998182 14.0018C1.63773 14.6407 2.505 15 3.40909 15C7.03773 15 13.4168 15 17.0455 15C17.9495 15 18.8168 14.6407 19.4564 14.0018C20.0952 13.3623 20.4545 12.495 20.4545 11.5909C20.4545 9.21409 20.4545 5.78591 20.4545 3.40909ZM2.98295 5.30523C2.98295 5.30523 7.12091 8.61545 8.94954 10.078C9.69682 10.6759 10.7577 10.6759 11.505 10.078C13.3336 8.61545 17.4716 5.30523 17.4716 5.30523C17.7655 5.07 17.8132 4.64045 17.578 4.34659C17.3427 4.05273 16.9132 4.005 16.6193 4.24023C16.6193 4.24023 12.482 7.55045 10.6534 9.01364C10.4039 9.21273 10.0507 9.21273 9.80114 9.01364L3.83523 4.24023C3.54136 4.005 3.11182 4.05273 2.87659 4.34659C2.64136 4.64045 2.68909 5.07 2.98295 5.30523Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    Call
-                                  </a>
-                                  
-                                </div>
-                              </div>
-
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="feature.html">Features</a>
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="about.html">About Us</a>
-
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="contact-us.html">Contact Us</a>
-
-                        <div>
-                            <a class="group block md:hidden hero_cta inline-flex items-center gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-                                href="../../templates/agency/index.html#contact">
-                                Login
-                            </a>
-                        </div>
-
-                    </div>
-                    <div>
-                        <a class="group  hidden md:flex hero_cta inline-flex items-center gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-                            href="#">
-                            <span>Login</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="23.5" y="0.499512" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.499512)" stroke="white"/>
-                                <path d="M4.74946 11.9966C4.74946 11.7977 4.82848 11.6069 4.96913 11.4663C5.10978 11.3256 5.30055 11.2466 5.49946 11.2466L14.2865 11.2466L10.9995 8.30561C10.8525 8.17264 10.7642 7.98694 10.7538 7.78906C10.7433 7.59117 10.8116 7.3972 10.9437 7.2495C11.0758 7.10181 11.261 7.0124 11.4588 7.0008C11.6566 6.9892 11.851 7.05636 11.9995 7.18761L16.7495 11.4376C16.8283 11.508 16.8913 11.5942 16.9345 11.6906C16.9777 11.787 17 11.8915 17 11.9971C17 12.1028 16.9777 12.2072 16.9345 12.3036C16.8913 12.4 16.8283 12.4863 16.7495 12.5566L11.9995 16.8066C11.9262 16.8729 11.8405 16.9241 11.7473 16.9572C11.6542 16.9903 11.5554 17.0047 11.4567 16.9995C11.3579 16.9943 11.2612 16.9696 11.1721 16.9269C11.0829 16.8841 11.0031 16.8242 10.9372 16.7505C10.8713 16.6768 10.8206 16.5909 10.788 16.4975C10.7555 16.4042 10.7417 16.3053 10.7475 16.2066C10.7533 16.1079 10.7785 16.0114 10.8218 15.9225C10.865 15.8336 10.9254 15.7541 10.9995 15.6886L14.2865 12.7466L5.49946 12.7466C5.30055 12.7466 5.10978 12.6676 4.96913 12.5269C4.82848 12.3863 4.74946 12.1955 4.74946 11.9966Z" fill="white"/>
-                                </svg>
-                                
-                        </a>
-                    </div>
-                </div>
-                <!-- End Collapse -->
-                <div class="md:hidden">
-                    <button type="button"
-                        class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none"
-                        data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse"
-                        aria-label="Toggle navigation">
-                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <line x1="3" x2="21" y1="6" y2="6" />
-                            <line x1="3" x2="21" y1="12" y2="12" />
-                            <line x1="3" x2="21" y1="18" y2="18" />
-                        </svg>
-                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </nav>
+          <header
+          class="sticky top-5  inset-x-0 flex  container mx-auto z-50 lg:px-20 px-5 flex-wrap sm:justify-start sm:flex-nowrap py-1">
+          <nav class=" w-full mx-auto rounded-[40px] bg-white py-2 md:py-0 text-sm px-4 flex flex-wrap basis-full items-center justify-between">
+              <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+                  href="index.html">
+                  <div class="logo-container flex gap-2 items-center">
+                      <img src="/img/workroot.png" height="50" class="h-8" />
+                      <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
+                  </div>
+              </a>
+              <div class="sm:order-3 flex items-center gap-x-2">
+                  <button type="button"
+                      class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                      id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
+                      aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
+                      <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="3" x2="21" y1="6" y2="6" />
+                          <line x1="3" x2="21" y1="12" y2="12" />
+                          <line x1="3" x2="21" y1="18" y2="18" />
+                      </svg>
+                      <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 6 6 18" />
+                          <path d="m6 6 12 12" />
+                      </svg>
+                      <span class="sr-only">Toggle</span>
+                  </button>
+                  <button type="button"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full disabled:opacity-50 disabled:pointer-events-none">
+                      <span>Login</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="23.5" y="0.499512" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.499512)" stroke="white"/>
+                          <path d="M4.74946 11.9966C4.74946 11.7977 4.82848 11.6069 4.96913 11.4663C5.10978 11.3256 5.30055 11.2466 5.49946 11.2466L14.2865 11.2466L10.9995 8.30561C10.8525 8.17264 10.7642 7.98694 10.7538 7.78906C10.7433 7.59117 10.8116 7.3972 10.9437 7.2495C11.0758 7.10181 11.261 7.0124 11.4588 7.0008C11.6566 6.9892 11.851 7.05636 11.9995 7.18761L16.7495 11.4376C16.8283 11.508 16.8913 11.5942 16.9345 11.6906C16.9777 11.787 17 11.8915 17 11.9971C17 12.1028 16.9777 12.2072 16.9345 12.3036C16.8913 12.4 16.8283 12.4863 16.7495 12.5566L11.9995 16.8066C11.9262 16.8729 11.8405 16.9241 11.7473 16.9572C11.6542 16.9903 11.5554 17.0047 11.4567 16.9995C11.3579 16.9943 11.2612 16.9696 11.1721 16.9269C11.0829 16.8841 11.0031 16.8242 10.9372 16.7505C10.8713 16.6768 10.8206 16.5909 10.788 16.4975C10.7555 16.4042 10.7417 16.3053 10.7475 16.2066C10.7533 16.1079 10.7785 16.0114 10.8218 15.9225C10.865 15.8336 10.9254 15.7541 10.9995 15.6886L14.2865 12.7466L5.49946 12.7466C5.30055 12.7466 5.10978 12.6676 4.96913 12.5269C4.82848 12.3863 4.74946 12.1955 4.74946 11.9966Z" fill="white"/>
+                          </svg>
+                  </button>
+                 
+              </div>
+              <div id="hs-navbar-alignment"
+                  class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
+                  aria-labelledby="hs-navbar-alignment-collapse">
+                  <div class="flex flex-col gap-5 my-5 sm:flex-row sm:items-center sm:my-0 sm:ps-5">
+                      <a class="text-sm text-black hover:text-[#6A00FF] md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="index.html" aria-current="page">Home</a>
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Product
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 z-50 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="/sms.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  SMS
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="voice.html">
+                                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M13.5631 8.6643C13.5631 8.33299 13.8318 8.06435 14.1631 8.06435C14.4944 8.06435 14.763 8.33299 14.763 8.6643C14.763 10.6949 13.9327 12.5405 12.5951 13.878C11.4243 15.0488 9.8642 15.831 8.1315 16.0078V18.5H6.63152V16.0078C4.89882 15.8312 3.3387 15.049 2.16788 13.878C0.830331 12.5403 0 10.6947 0 8.6643C0 8.33299 0.268642 8.06435 0.599954 8.06435C0.931267 8.06435 1.19991 8.33299 1.19991 8.6643C1.19991 10.3636 1.89553 11.9089 3.01617 13.0295C4.13682 14.1502 5.68229 14.8458 7.38161 14.8458C9.08092 14.8458 10.6262 14.1502 11.7468 13.0295C12.8675 11.9089 13.5631 10.3636 13.5631 8.6643ZM7.38161 0.5C5.34063 0.5 3.67079 2.16984 3.67079 4.21081V8.6643C3.67079 10.7053 5.34063 12.3751 7.38161 12.3751C9.42258 12.3751 11.0924 10.7053 11.0924 8.6643V4.21062C11.0924 2.16984 9.42258 0.5 7.38161 0.5Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Voice
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="email.html">
+                                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M20.4545 3.40909C20.4545 2.505 20.0952 1.63773 19.4564 0.998182C18.8168 0.359318 17.9495 0 17.0455 0C13.4168 0 7.03773 0 3.40909 0C2.505 0 1.63773 0.359318 0.998182 0.998182C0.359318 1.63773 0 2.505 0 3.40909C0 5.78591 0 9.21409 0 11.5909C0 12.495 0.359318 13.3623 0.998182 14.0018C1.63773 14.6407 2.505 15 3.40909 15C7.03773 15 13.4168 15 17.0455 15C17.9495 15 18.8168 14.6407 19.4564 14.0018C20.0952 13.3623 20.4545 12.495 20.4545 11.5909C20.4545 9.21409 20.4545 5.78591 20.4545 3.40909ZM2.98295 5.30523C2.98295 5.30523 7.12091 8.61545 8.94954 10.078C9.69682 10.6759 10.7577 10.6759 11.505 10.078C13.3336 8.61545 17.4716 5.30523 17.4716 5.30523C17.7655 5.07 17.8132 4.64045 17.578 4.34659C17.3427 4.05273 16.9132 4.005 16.6193 4.24023C16.6193 4.24023 12.482 7.55045 10.6534 9.01364C10.4039 9.21273 10.0507 9.21273 9.80114 9.01364L3.83523 4.24023C3.54136 4.005 3.11182 4.05273 2.87659 4.34659C2.64136 4.64045 2.68909 5.07 2.98295 5.30523Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Call
+                              </a>
+      
+                          </div>
+                      </div>
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Service
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="/sms.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Web Development
+                              </a>
+                             
+      
+                          </div>
+                      </div>
+                      <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="about.html">About Us</a>
+      
+                      <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="contact-us.html">Contact Us</a>
+                  </div>
+              </div>
+          </nav>
         </header>
         <!-- ========== END HEADER ========== -->
        
         <!-- hero section start from here -->
         <div class="container mx-auto relative">
-            <div class=" hero-section px-40">
+            <div class=" hero-section md:px-40 px-5">
                 <div class="container mx-auto">
                     
                     <!-- hero title start from here -->
                     <div class="text-center text-white pt-20 pb-40">
-                        <h1 class="text-6xl font-bold">
-                            Empower Your Outreach, Elevate Your Connectivity
+                        <h1 class="text-4xl md:text-6xl font-bold">
+                            Empower Your Outreach, <br> Elevate Your Connectivity
                         </h1>
-                        <p class="mt-5 w-1/2 mx-auto">
+                        <p class="mt-5 md:w-1/2 mx-auto text-lg">
                             From swift and personalized SMS campaigns to impactful automated calls and dynamic email marketing, we provide the tools you need to amplify your outreach efforts.
                         </p>
                         <div class="btn-container mt-10">
@@ -184,21 +200,21 @@
 
         <!--voice service section start-->
         <div class="bg-white">
-            <div class="container mx-auto px-40">
-                <div class="border p-10 rounded-[20px] -translate-y-24 bg-white border-[25px] border-[#292929] bg-no-repeat bg-right-top bg-[url('/img/product_box_bg.png')]">
+            <div class="container mx-auto lg:px-40 px-5">
+                <div class="border md:p-10  p-5 rounded-[20px] -translate-y-24 bg-white border-[25px] border-[#292929] bg-no-repeat bg-right-top bg-[url('/img/product_box_bg.png')]">
                     <div class="sms_icon_container">
                         <img src="img/email_icon.png"/>
                     </div>
-                    <div class="product_box grid grid-cols-2 mt-10 divide-x divide-[#E0E0E0]">
+                    <div class="product_box grid md:grid-cols-2 gap-5 mt-10 md:divide-x divide-[#E0E0E0]">
                         <div class="">
                             
                             <div class="sms_box_title">
-                                <h3 class="font-bold text-6xl text-[#404040]">
+                                <h3 class="font-bold text-4xl md:text-6xl lg:text-8xl text-[#404040]">
                                     What is <br><span class="text-[#6A00FF]">Email</span><br> Service?
                                 </h3>
                             </div>
                         </div>
-                        <div class="px-10 text-lg font-medium">
+                        <div class="md:px-10 px-0 md:text-lg font-medium">
                             <p>Email Service is a robust platform designed to streamline your email communication. From creating visually stunning campaigns to delivering personalized newsletters, our Email Service empowers you to engage your audience effectively and drive meaningful interactions.</p>
                         </div>
                     </div>
@@ -209,10 +225,10 @@
 
         <!--feature section start-->
         <div class="bg-white">
-            <div class="container mx-auto px-20 py-5">
-                <h2 class="text-[#1A1A1A] font-bold text-6xl opacity-25 mt-10">Features</h2>
+            <div class="container mx-auto px-5 md:px-20 py-5 pb-20">
+                <h2 class="text-[#1A1A1A] font-bold text-6xl md:text-8xl opacity-25">Features</h2>
                 <div class="grid grid-cols-3 gap-5 mt-10">
-                    <div class="col-span-2 border border-[#A0A0A0] bg-[url('/img/feature_gradient_bg.png')] bg-no-repeat bg-right-top rounded-xl p-10">
+                    <div class="col-span-3 md:col-span-2border border-[#A0A0A0] bg-[url('/img/feature_gradient_bg.png')] bg-no-repeat bg-right-top rounded-xl p-10">
                         <div class="">
                             <img src="img/email_dynamic.png" alt="automate"/>
                         </div>
@@ -221,7 +237,7 @@
                             <p class="text-[#A64AFF] font-medium mt-3">Craft visually appealing and dynamic email campaigns that captivate your audience. From promotional emails to newsletters, our Email Service helps you make a lasting impression.</p>
                         </div>
                     </div>
-                    <div class="bg-[#A64AFF] rounded-xl p-10">
+                    <div class="bg-[#A64AFF] md:col-span-1 col-span-3 rounded-xl p-10">
                         <div class="">
                             <img src="img/voice_personalized.png" alt="personalize"/>
                         </div>
@@ -229,7 +245,7 @@
                             Excellence</h4>
                             <p class="text-white font-medium mt-3 ">Personalize your emails to create a tailored experience for each recipient. Address your audience by name and customize content for a more engaging connection.</p>
                     </div>
-                    <div class="bg-[#A64AFF] rounded-xl p-10 bg-[url('img/feature_gradient_bg_color_btm.png')] bg-no-repeat bg-left-bottom">
+                    <div class="bg-[#A64AFF] md:col-span-1 col-span-3 rounded-xl p-10 bg-[url('img/feature_gradient_bg_color_btm.png')] bg-no-repeat bg-left-bottom">
                         <div class="">
                             <img src="img/email_automated.png" alt="ivr"/>
                         </div>
@@ -237,7 +253,7 @@
                             Campaigns</h4>
                             <p class="text-white font-medium mt-3 ">Save time and resources with automated email campaigns. Schedule and send emails at predefined intervals, ensuring timely and consistent communication.</p>
                     </div>
-                    <div class="bg-[#A64AFF] rounded-xl p-10">
+                    <div class="bg-[#A64AFF] md:col-span-1 col-span-3 rounded-xl p-10">
                         <div class="">
                             <img src="img/email_analytics.png" alt="Scheduled"/>
                         </div>
@@ -245,7 +261,7 @@
                             Analytics</h4>
                             <p class="text-white font-medium mt-3 ">Gain valuable insights into the performance of your email campaigns. Track open rates, click-through rates, and other metrics to optimize your strategy for maximum impact.</p>
                     </div>
-                    <div class="bg-[#A64AFF] rounded-xl p-10 bg-[url('img/feature_gradient_bg_color.png')] bg-no-repeat bg-right-top">
+                    <div class="bg-[#A64AFF] md:col-span-1 col-span-3 rounded-xl p-10 bg-[url('img/feature_gradient_bg_color.png')] bg-no-repeat bg-right-top">
                         <div class="">
                             <img src="img/email_intigration.png" alt="instant"/>
                         </div>
@@ -259,93 +275,70 @@
         <!--feature section ends-->
 
         <!--use case start-->
-            <div class="bg-white">
-                <div class="container mx-auto px-20 py-5">
-                    <h2 class="text-[#1A1A1A] font-bold text-6xl opacity-25 mt-10">Use Cases</h2>
-                </div>
-                <div class="bg-[#F0F0F0]">
-                    <div class="container mx-auto px-20 py-5">
-                        <div class="grid grid-cols-2 items-center">
-                            <div>
-                                <h3 class="text-4xl font-semibold text-[#1A1A1A]">Marketing and Promotions</h3>
-                                <p class="text-[#404040] opacity-75 mt-5 w-2/3">
-                                    Drive sales and engagement with targeted marketing emails. Promote products, announce discounts, and build brand awareness effortlessly
-                                </p>
-                                <div class="btn-container mt-8">
-                                    <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
-                                        <span>Get a quote</span>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
-                                            <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
-                                            </svg>
-                                            
-                                            
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/3d_campaign.png" alt="3d_campaign" />
-                            </div>
+        <div class="relative">
+            <div class="blur blur-2xl opacity-75 -top-10 -z-10 h-1/2 w-1/2 rounded-full  bg-[#A64AFF] absolute -left-1/3"></div>
+            <div class="container mx-auto px-5 md:px-20 py-5">
+                <h2 class="text-[#E0E0E0] font-bold md:text-8xl text-6xl my-10">Use Cases</h2>
+                <div class="grid grid-cols-3 gap-5 mb-10">
+                    <div class="flex flex-col col-span-3 md:col-span-1 bg-white border shadow-sm rounded-xl">
+                       <div class="px-4 md:px-5 pt-5 pb-0">
+                        <svg width="42"  height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.89997 32.4303L12.695 40.8947C13.2243 41.8318 14.3858 42.2719 15.4537 41.8252L18.3425 40.5955C19.5554 40.0718 20.0182 38.6267 19.3835 37.505L14.764 29.3529C18.363 27.7068 21.8678 26.8453 25.6424 27.9279L25.701 28.0516C26.3257 29.3592 27.7602 29.8237 28.9605 29.2878C30.1967 28.7216 30.7368 27.2643 30.1707 26.0347L27.5422 20.2701C28.6873 18.9754 28.9802 17.1277 28.2449 15.5272C27.5163 13.92 25.9221 12.9311 24.2046 12.9506H24.198L21.5695 7.18619C20.9953 5.9419 19.5454 5.41215 18.3099 5.97597C17.1561 6.50927 16.4969 7.8868 17.1387 9.31374L17.1648 9.36568V9.37219C16.0541 11.786 14.2634 13.6394 11.9663 15.0586C11.9663 15.0586 11.9598 15.0586 11.9533 15.0651C10.1307 16.269 9.46416 16.3957 2.76013 19.5024C0.443879 20.5565 -0.571127 23.2956 0.476442 25.6118L2.44768 29.9058C3.41994 32.049 5.80462 33.0368 7.89997 32.4303ZM27.0802 16.0541C27.5163 17.0041 27.4381 18.0776 26.9306 18.9363L24.8096 14.2844C25.792 14.4601 26.6509 15.1042 27.0802 16.0541ZM17.848 10.8621L24.9592 26.4381C21.6737 25.7678 18.7979 26.4381 16.1628 27.3619L11.3937 16.9064C13.8076 15.5205 16.1954 13.7834 17.848 10.8621ZM13.5734 29.8993L18.2513 38.1493C18.5036 38.5777 18.3454 39.1684 17.8284 39.3984L14.9397 40.628C14.5297 40.8037 14.0483 40.6411 13.8272 40.2508L9.11654 31.9358L13.5734 29.8993Z" fill="#A64AFF"/>
+                            <path d="M26.8396 9.38445L29.5461 8.17438L33.3068 8.99417C34.094 9.16985 34.8747 8.66886 35.0504 7.87496L36.0393 3.33365C36.2085 2.54642 35.7075 1.76571 34.9203 1.59003L27.77 0.0351141C26.9762 -0.140566 26.189 0.360424 26.0198 1.14765L25.0309 5.68897C24.8617 6.48271 25.3627 7.26342 26.1564 7.4391L26.703 7.55632L26.3841 9.02022C26.3302 9.27577 26.5786 9.50308 26.8396 9.38445ZM29.1168 2.6897C29.6632 2.29275 30.418 2.43587 30.7888 2.98896C30.8083 3.01501 30.8213 3.04741 30.8344 3.07346C30.8604 3.05392 30.8865 3.03439 30.919 3.01501C31.472 2.65062 32.2266 2.81328 32.5716 3.39226C32.9034 3.94535 32.6822 4.66094 32.1486 5.01881L30.4635 6.13135C30.3008 6.23555 30.0862 6.18996 29.982 6.03382L28.8695 4.34865C28.5181 3.81526 28.5963 3.06695 29.1168 2.6897Z" fill="#A64AFF"/>
+                            <path d="M31.9664 24.6031L32.4478 24.7723L31.9924 26.067C31.9102 26.3298 32.1611 26.5182 32.3633 26.4508L34.9658 25.6505L38.3034 26.8217C38.9996 27.0688 39.7738 26.6981 40.021 25.9954L41.4264 21.9681C41.6736 21.2719 41.3028 20.5042 40.6066 20.257L34.2631 18.0383C33.5604 17.7911 32.7927 18.1554 32.5455 18.8581L31.1335 22.8789C30.8929 23.5881 31.2573 24.3558 31.9664 24.6031ZM34.8096 23.1327L35.4993 21.1678C35.6034 20.8751 35.9872 20.8165 36.1759 21.0636L37.282 22.5536C37.4446 22.7748 37.334 23.0936 37.0673 23.1588L35.2716 23.6337C34.9723 23.7117 34.7054 23.4255 34.8096 23.1327Z" fill="#A64AFF"/>
+                            <path d="M35.8312 16.2289L37.5033 15.0058L40.1968 15.0123C40.7564 15.0123 41.2183 14.5567 41.2183 13.9908L41.2313 10.7442C41.2313 10.1781 40.7694 9.71615 40.2099 9.71615L35.096 9.70312C34.5234 9.70312 34.0614 10.1587 34.0614 10.7246L34.0549 13.9712C34.0549 14.5373 34.5104 14.9993 35.083 14.9993H35.4733L35.4668 16.0467C35.4668 16.2476 35.7018 16.3367 35.8312 16.2289ZM36.5469 11.59H39.0127C39.3705 11.59 39.6634 11.8828 39.6634 12.2406C39.6634 12.5985 39.3705 12.8913 39.0127 12.8913H36.5469C36.1825 12.8913 35.8962 12.5985 35.8962 12.2406C35.8962 11.8828 36.1825 11.59 36.5469 11.59Z" fill="#A64AFF"/>
+                         </svg>
+                       </div>
+                        <div class="p-4 md:p-5">
+                            <h3 class="text-2xl mt-1 font-bold text-[#1A1A1A]">Marketing Campaigns</h3>
+                            <p class="text-[#404040] text-lg mt-1">
+                                Elevate your communication strategy with our cutting-edge Bulk SMS service. At WorkRoot, we
+                                redefine
+                                messaging precision, offering a robust platform designed to deliver your messages instantly and
+                                reliably
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="bg-[#F0F0F0] shadow-gray-600 shadow-2xl">
-                    <div class="container mx-auto px-20 py-5">
-                        <div class="grid grid-cols-2 items-center">
-                            <div>
-                                <h3 class="text-4xl font-semibold text-[#1A1A1A]">Newsletters and Updates</h3>
-                                <p class="text-[#404040] opacity-75 mt-5 w-2/3">
-                                    Keep your audience informed with visually appealing newsletters. Share updates, industry insights, and company news to foster customer loyalty
-                                </p>
-                                <div class="btn-container mt-8">
-                                    <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
-                                        <span>Get a quote</span>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
-                                            <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
-                                            </svg>
-                                            
-                                            
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/email_updates.png" alt="surveys" />
-                            </div>
+                    <div class="flex flex-col bg-white border col-span-3 md:col-span-1 shadow-sm rounded-xl">
+                        <div class="px-4 md:px-5 pt-5 pb-0">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 40C17.2222 40 14.6207 39.4726 12.1956 38.4178C9.77037 37.363 7.65926 35.937 5.86223 34.14C4.06519 32.343 2.63926 30.2319 1.58445 27.8067C0.529633 25.3815 0.00148459 22.7793 3.108e-06 20C-0.00147837 17.2207 0.52667 14.6193 1.58445 12.1956C2.64223 9.77185 4.06741 7.66074 5.86 5.86222C7.6526 4.0637 9.76371 2.63778 12.1933 1.58444C14.623 0.531111 17.2252 0.00296296 20 0C23.037 0 25.917 0.648148 28.64 1.94444C31.363 3.24074 33.6682 5.07407 35.5556 7.44444V2.22222H40V15.5556H26.6667V11.1111H32.7778C31.2593 9.03704 29.3889 7.40741 27.1667 6.22222C24.9444 5.03704 22.5556 4.44444 20 4.44444C15.6667 4.44444 11.9911 5.95407 8.97334 8.97333C5.95556 11.9926 4.44593 15.6681 4.44445 20C4.44297 24.3319 5.9526 28.0081 8.97334 31.0289C11.9941 34.0496 15.6696 35.5585 20 35.5556C23.8889 35.5556 27.2874 34.2963 30.1956 31.7778C33.1037 29.2593 34.8163 26.0741 35.3333 22.2222H39.8889C39.3333 27.2963 37.1578 31.5281 33.3622 34.9178C29.5667 38.3074 25.1126 40.0015 20 40ZM26.2222 29.3333L17.7778 20.8889V8.88889H22.2222V19.1111L29.3333 26.2222L26.2222 29.3333Z" fill="#A64AFF"/>
+                                </svg>
+                                
                         </div>
-                    </div>
-                </div>
-                <div class="bg-[#F0F0F0] shadow-gray-600 shadow-2xl">
-                    <div class="container mx-auto px-20 py-5">
-                        <div class="grid grid-cols-2 items-center">
-                            <div>
-                                <h3 class="text-4xl font-semibold text-[#1A1A1A]">Transactional Emails</h3>
-                                <p class="text-[#404040] opacity-75 mt-5 w-2/3">
-                                    Deliver transactional emails with ease. Keep customers informed about order confirmations, shipping updates, and other transaction-related communications
-                                </p>
-                                <div class="btn-container mt-8">
-                                    <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
-                                        <span>Get a quote</span>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
-                                            <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
-                                            </svg>
-                                            
-                                            
-                                    </button>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="img/email_transactional.png" alt="greetings" />
-                            </div>
+                         <div class="p-4 md:p-5">
+                             <h3 class="text-2xl mt-1 font-bold text-[#1A1A1A]">Customer Updates</h3>
+                             <p class="text-[#404040] text-lg mt-1 ">
+                                Ensure maximum attendance at your events by sending SMS reminders. Keep your audience
+                                informed
+                                about dates, times, and important details.
+                             </p>
+                         </div>
+                     </div>
+                     <div class="flex flex-col bg-white border col-span-3 md:col-span-1 shadow-sm rounded-xl">
+                        <div class="px-4 md:px-5 pt-5 pb-0">
+                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.8177 29.386C28.4407 28.9542 32.0006 28.0992 35.4244 26.8383C32.526 23.6269 30.9242 19.453 30.9301 15.1271V13.6685C30.9301 10.5738 29.7007 7.60589 27.5125 5.41762C25.3242 3.22936 22.3563 2 19.2616 2C16.1669 2 13.199 3.22936 11.0107 5.41762C8.82245 7.60589 7.5931 10.5738 7.5931 13.6685V15.1271C7.59841 19.4533 5.99595 23.6272 3.09684 26.8383C6.46709 28.083 10.0201 28.9484 13.7054 29.386M24.8177 29.386C21.1265 29.823 17.3967 29.823 13.7054 29.386M24.8177 29.386C25.098 30.2608 25.1677 31.1895 25.0211 32.0964C24.8746 33.0033 24.516 33.8628 23.9745 34.6048C23.4329 35.3469 22.7238 35.9506 21.9049 36.3669C21.0859 36.7831 20.1802 37 19.2616 37C18.3429 37 17.4373 36.7831 16.6183 36.3669C15.7993 35.9506 15.0902 35.3469 14.5487 34.6048C14.0072 33.8628 13.6486 33.0033 13.5021 32.0964C13.3555 31.1895 13.4252 30.2608 13.7054 29.386M2 10.7514C2.54846 7.49389 4.01056 4.45909 6.21622 2M32.307 2C34.5126 4.45909 35.9747 7.49389 36.5232 10.7514" stroke="#A64AFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
                         </div>
-                    </div>
+                         <div class="p-4 md:p-5">
+                             <h3 class="text-2xl mt-1 font-bold text-[#1A1A1A]">Event Reminders</h3>
+                             <p class="text-[#404040] text-lg mt-1">
+                                Ensure maximum attendance at your events by sending SMS reminders. Keep your audience
+                                        informed
+                                        about dates, times, and important details.
+                             </p>
+                         </div>
+                     </div>
+                    
                 </div>
             </div>
+        </div>
         <!--use case end-->
         <!--pricing start-->
         <div class="bg-white">
-            <div class="container mx-auto px-20 py-10">
+            <div class="container mx-auto px-5 md:px-20 py-10">
                 <div class="flex justify-center">
                     <div class="flex bg-gray-100 hover:bg-gray-200 rounded-full transition p-1 justify-center">
                       <nav class="flex gap-x-1 justify-center" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
@@ -362,7 +355,7 @@
                   <div class="mt-10">
                     <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
                       <div class="grid grid-cols-4 gap-5">
-                        <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                        <div class="pricing-card divide-y col-span-4 lg:col-span-1 border rounded-xl border-[#404040] p-5">
                            <div>
                             <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                             <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -466,7 +459,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pricing-card relative divide-y border rounded-xl border-[#404040] p-5">
+                        <div class="pricing-card relative divide-y border col-span-4 lg:col-span-1 rounded-xl border-[#404040] p-5">
                             <div>
                              <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                              <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -573,7 +566,7 @@
                                 <img src="img/price_popular.png" alt="price tag popular" />
                              </div>
                          </div>
-                         <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                         <div class="pricing-card divide-y border rounded-xl col-span-4 lg:col-span-1 border-[#404040] p-5">
                             <div>
                              <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                              <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -677,7 +670,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                         <div class="pricing-card divide-y border rounded-xl col-span-4 lg:col-span-1 border-[#404040] p-5">
                             <div>
                              <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                              <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -785,7 +778,7 @@
                     </div>
                     <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
                         <div class="grid grid-cols-4 gap-5">
-                            <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                            <div class="pricing-card divide-y col-span-4 lg:col-span-1 border rounded-xl border-[#404040] p-5">
                                <div>
                                 <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                                 <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -889,7 +882,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pricing-card relative divide-y border rounded-xl border-[#404040] p-5">
+                            <div class="pricing-card relative divide-y border col-span-4 lg:col-span-1 rounded-xl border-[#404040] p-5">
                                 <div>
                                  <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                                  <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -996,7 +989,7 @@
                                     <img src="img/price_popular.png" alt="price tag popular" />
                                  </div>
                              </div>
-                             <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                             <div class="pricing-card divide-y border rounded-xl col-span-4 lg:col-span-1 border-[#404040] p-5">
                                 <div>
                                  <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                                  <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -1100,7 +1093,7 @@
                                      </div>
                                  </div>
                              </div>
-                             <div class="pricing-card divide-y border rounded-xl border-[#404040] p-5">
+                             <div class="pricing-card divide-y border rounded-xl col-span-4 lg:col-span-1 border-[#404040] p-5">
                                 <div>
                                  <h5 class="text-2xl font-bold text-[#404040]">SMS OTP Service</h5>
                                  <p class="font-medium text-[#404040] my-3">Useful for sending one time password over sms, for phone verification</p>
@@ -1214,8 +1207,8 @@
 
         <!--faq section start-->
         <div class="bg-white">
-            <div class="container mx-auto px-20 py-5">
-                <h2 class="text-[#1A1A1A] text-center font-bold text-6xl opacity-25 mt-10 mb-5 ">Frequently Asked Questions
+            <div class="container mx-auto px-5 md:px-20 py-5">
+                <h2 class="text-[#1A1A1A] text-center font-bold text-6xl md:text-8xl opacity-25 mt-10 mb-5 ">Frequently Asked Questions
                 </h2>
                 <div>
                     <div class="hs-accordion-group py-10">
@@ -1278,13 +1271,13 @@
         <!--faq section end-->
         
         <!--contact us-->
-       <div class="bg-white py-20">
+       <div class="bg-white md:py-20 py-10">
         <div class="container mb-10">
-            <div class="flex gap-10 px-20 grid grid-cols-2">
+            <div class="grid md:grid-cols-2 gap-10 px-5 md:px-20">
                 <div>
-                    <p class="text-lg font-semibold">Connect with us</p>
-                    <h4 class="text-8xl my-3 font-semibold">
-                        <span class="text-[#6A00FF]">Connecting</span> <br>Dreams, <br> Answering <br>Queries
+                    <p class="text-2xl font-semibold">Connect with us</p>
+                    <h4 class="text-6xl md:text-8xl my-3 font-bold">
+                        <span class="bg-gradient-to-r from-[#6A00FF] to-[#B569FF] bg-clip-text text-transparent">Connecting</span> <br>Dreams, <br> Answering <br>Queries
                     </h4>
                 </div>
                 <div>
@@ -1338,7 +1331,7 @@
         <footer class="mt-auto w-full  mx-auto">
             <div class="py-10 px-4">
                 <!-- Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
                     <div class="flex items-center justify-center">
                         <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
                             href="#" aria-label="Brand">
@@ -1445,14 +1438,14 @@
                 <!-- End Grid -->
             </div>
     
-            <div class="py-3 bg-[#404040] px-5">
-                <div class="sm:flex sm:justify-between sm:items-center container mx-auto ">
+            <div class="py-3 bg-[#404040] px-4">
+                <div class="md:flex md:justify-between md:items-center container mx-auto ">
                     <div class="copyright_comment">
                         <p class="text-xs text-white"> © 2023 WorkRoot IT Solutions LLP™. All Rights Reserved.</p>
                     </div>
     
     
-                    <div class="flex flex-wrap justify-between items-center gap-3">
+                    <div class="flex flex-wrap justify-between items-center gap-3 mt-4 md:mt-0">
                         <!-- Social Brands -->
                         <div class="space-x-4">
                             <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"

@@ -12,7 +12,8 @@
 
 <body class="bg-[#6A00FF] overflow-x-hidden">
     <div class="relative">
-        <div class="blur blur-2xl opacity-75 -top-80 -z-10 h-1/6 w-1/2 rounded-full -translate-x-1/2 bg-[#A64AFF] absolute left-1/2"></div>
+        <div class="blur blur-2xl opacity-75 top-80 -z-10 h-1/6 w-1/2 rounded-full  bg-[#A64AFF] absolute -left-1/4"></div>
+        <div class="blur blur-2xl opacity-75 top-32 -z-10 h-1/4 w-1/3 rounded-full  bg-[#A64AFF] absolute -right-1/4"></div>
         <div class="line-group absolute right-10 flex gap-5 opacity-50">
             <div class="h-20 w-px border border-r-white border-dashed"></div>
             <div class="h-40 w-px border border-r-white border-dashed"></div>
@@ -22,141 +23,156 @@
         </div>
         
           <!-- ========== HEADER ========== -->
-          <header class="sticky top-4  inset-x-0 flex container mx-auto px-20 flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-            <nav class="relative w-full bg-white rounded-[28px] py-3 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2"
-                aria-label="Global">
-                <div class="flex items-center justify-between md:hidden">
-                    <!-- Logo -->
-                    <div class="logo-container flex gap-2 items-center">
-                        <img src="/img/workroot.png" height="50" class="h-8" />
-                        <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
-                    </div>
-                    <!-- End Logo -->
-
-
-                </div>
-
-                <!-- Collapse -->
-                <div id="navbar-collapse"
-                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:flex items-center justify-between">
-                    <div class="flex items-center justify-between hidden md:inline-block">
-                        <!-- Logo -->
-                        <div class="logo-container flex gap-2 items-center">
-                            <img src="/img/workroot.png" height="50" class="h-8" />
-                            <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
-                        </div>
-                        <!-- End Logo -->
-
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-                        <a class="text-sm text-black hover:text-[#6A00FF] md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="index.html" aria-current="page">Home</a>
-                       
-                            <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
-                                <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-3  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none " aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                    Product
-                                  
-                                  <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929"/>
-                                    </svg>
-                                    
-                                </button>
-                              
-                                <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="/sms.html">
-                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    SMS
-                                  </a>
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="voice.html">
-                                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5631 8.6643C13.5631 8.33299 13.8318 8.06435 14.1631 8.06435C14.4944 8.06435 14.763 8.33299 14.763 8.6643C14.763 10.6949 13.9327 12.5405 12.5951 13.878C11.4243 15.0488 9.8642 15.831 8.1315 16.0078V18.5H6.63152V16.0078C4.89882 15.8312 3.3387 15.049 2.16788 13.878C0.830331 12.5403 0 10.6947 0 8.6643C0 8.33299 0.268642 8.06435 0.599954 8.06435C0.931267 8.06435 1.19991 8.33299 1.19991 8.6643C1.19991 10.3636 1.89553 11.9089 3.01617 13.0295C4.13682 14.1502 5.68229 14.8458 7.38161 14.8458C9.08092 14.8458 10.6262 14.1502 11.7468 13.0295C12.8675 11.9089 13.5631 10.3636 13.5631 8.6643ZM7.38161 0.5C5.34063 0.5 3.67079 2.16984 3.67079 4.21081V8.6643C3.67079 10.7053 5.34063 12.3751 7.38161 12.3751C9.42258 12.3751 11.0924 10.7053 11.0924 8.6643V4.21062C11.0924 2.16984 9.42258 0.5 7.38161 0.5Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    Voice
-                                  </a>
-                                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 " href="email.html">
-                                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4545 3.40909C20.4545 2.505 20.0952 1.63773 19.4564 0.998182C18.8168 0.359318 17.9495 0 17.0455 0C13.4168 0 7.03773 0 3.40909 0C2.505 0 1.63773 0.359318 0.998182 0.998182C0.359318 1.63773 0 2.505 0 3.40909C0 5.78591 0 9.21409 0 11.5909C0 12.495 0.359318 13.3623 0.998182 14.0018C1.63773 14.6407 2.505 15 3.40909 15C7.03773 15 13.4168 15 17.0455 15C17.9495 15 18.8168 14.6407 19.4564 14.0018C20.0952 13.3623 20.4545 12.495 20.4545 11.5909C20.4545 9.21409 20.4545 5.78591 20.4545 3.40909ZM2.98295 5.30523C2.98295 5.30523 7.12091 8.61545 8.94954 10.078C9.69682 10.6759 10.7577 10.6759 11.505 10.078C13.3336 8.61545 17.4716 5.30523 17.4716 5.30523C17.7655 5.07 17.8132 4.64045 17.578 4.34659C17.3427 4.05273 16.9132 4.005 16.6193 4.24023C16.6193 4.24023 12.482 7.55045 10.6534 9.01364C10.4039 9.21273 10.0507 9.21273 9.80114 9.01364L3.83523 4.24023C3.54136 4.005 3.11182 4.05273 2.87659 4.34659C2.64136 4.64045 2.68909 5.07 2.98295 5.30523Z" fill="#00829B"/>
-                                        </svg>
-                                        
-                                    Call
-                                  </a>
-                                  
-                                </div>
-                              </div>
-
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="feature.html">Features</a>
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="about.html">About Us</a>
-
-                        <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
-                            href="contact-us.html">Contact Us</a>
-
-                        <div>
-                            <a class="group block md:hidden hero_cta inline-flex items-center gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-                                href="../../templates/agency/index.html#contact">
-                                Login
-                            </a>
-                        </div>
-
-                    </div>
-                    <div>
-                        <a class="group  hidden md:flex hero_cta inline-flex items-center gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
-                            href="#">
-                            <span>Login</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="23.5" y="0.499512" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.499512)" stroke="white"/>
-                                <path d="M4.74946 11.9966C4.74946 11.7977 4.82848 11.6069 4.96913 11.4663C5.10978 11.3256 5.30055 11.2466 5.49946 11.2466L14.2865 11.2466L10.9995 8.30561C10.8525 8.17264 10.7642 7.98694 10.7538 7.78906C10.7433 7.59117 10.8116 7.3972 10.9437 7.2495C11.0758 7.10181 11.261 7.0124 11.4588 7.0008C11.6566 6.9892 11.851 7.05636 11.9995 7.18761L16.7495 11.4376C16.8283 11.508 16.8913 11.5942 16.9345 11.6906C16.9777 11.787 17 11.8915 17 11.9971C17 12.1028 16.9777 12.2072 16.9345 12.3036C16.8913 12.4 16.8283 12.4863 16.7495 12.5566L11.9995 16.8066C11.9262 16.8729 11.8405 16.9241 11.7473 16.9572C11.6542 16.9903 11.5554 17.0047 11.4567 16.9995C11.3579 16.9943 11.2612 16.9696 11.1721 16.9269C11.0829 16.8841 11.0031 16.8242 10.9372 16.7505C10.8713 16.6768 10.8206 16.5909 10.788 16.4975C10.7555 16.4042 10.7417 16.3053 10.7475 16.2066C10.7533 16.1079 10.7785 16.0114 10.8218 15.9225C10.865 15.8336 10.9254 15.7541 10.9995 15.6886L14.2865 12.7466L5.49946 12.7466C5.30055 12.7466 5.10978 12.6676 4.96913 12.5269C4.82848 12.3863 4.74946 12.1955 4.74946 11.9966Z" fill="white"/>
-                                </svg>
-                                
-                        </a>
-                    </div>
-                </div>
-                <!-- End Collapse -->
-                <div class="md:hidden">
-                    <button type="button"
-                        class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-neutral-800 text-white disabled:opacity-50 disabled:pointer-events-none"
-                        data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse"
-                        aria-label="Toggle navigation">
-                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <line x1="3" x2="21" y1="6" y2="6" />
-                            <line x1="3" x2="21" y1="12" y2="12" />
-                            <line x1="3" x2="21" y1="18" y2="18" />
-                        </svg>
-                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M18 6 6 18" />
-                            <path d="m6 6 12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </nav>
+          <header
+          class="sticky top-5  inset-x-0 flex  container mx-auto z-50 lg:px-20 px-5 flex-wrap sm:justify-start sm:flex-nowrap py-1">
+          <nav class=" w-full mx-auto rounded-[40px] bg-white py-2 md:py-0 text-sm px-4 flex flex-wrap basis-full items-center justify-between">
+              <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+                  href="index.html">
+                  <div class="logo-container flex gap-2 items-center">
+                      <img src="/img/workroot.png" height="50" class="h-8" />
+                      <p class="text-black text-lg text-[#292929] font-semibold">Workroot</p>
+                  </div>
+              </a>
+              <div class="sm:order-3 flex items-center gap-x-2">
+                  <button type="button"
+                      class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                      id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
+                      aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
+                      <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="3" x2="21" y1="6" y2="6" />
+                          <line x1="3" x2="21" y1="12" y2="12" />
+                          <line x1="3" x2="21" y1="18" y2="18" />
+                      </svg>
+                      <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 6 6 18" />
+                          <path d="m6 6 12 12" />
+                      </svg>
+                      <span class="sr-only">Toggle</span>
+                  </button>
+                  <button type="button"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full disabled:opacity-50 disabled:pointer-events-none">
+                      <span>Login</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="23.5" y="0.499512" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.499512)" stroke="white"/>
+                          <path d="M4.74946 11.9966C4.74946 11.7977 4.82848 11.6069 4.96913 11.4663C5.10978 11.3256 5.30055 11.2466 5.49946 11.2466L14.2865 11.2466L10.9995 8.30561C10.8525 8.17264 10.7642 7.98694 10.7538 7.78906C10.7433 7.59117 10.8116 7.3972 10.9437 7.2495C11.0758 7.10181 11.261 7.0124 11.4588 7.0008C11.6566 6.9892 11.851 7.05636 11.9995 7.18761L16.7495 11.4376C16.8283 11.508 16.8913 11.5942 16.9345 11.6906C16.9777 11.787 17 11.8915 17 11.9971C17 12.1028 16.9777 12.2072 16.9345 12.3036C16.8913 12.4 16.8283 12.4863 16.7495 12.5566L11.9995 16.8066C11.9262 16.8729 11.8405 16.9241 11.7473 16.9572C11.6542 16.9903 11.5554 17.0047 11.4567 16.9995C11.3579 16.9943 11.2612 16.9696 11.1721 16.9269C11.0829 16.8841 11.0031 16.8242 10.9372 16.7505C10.8713 16.6768 10.8206 16.5909 10.788 16.4975C10.7555 16.4042 10.7417 16.3053 10.7475 16.2066C10.7533 16.1079 10.7785 16.0114 10.8218 15.9225C10.865 15.8336 10.9254 15.7541 10.9995 15.6886L14.2865 12.7466L5.49946 12.7466C5.30055 12.7466 5.10978 12.6676 4.96913 12.5269C4.82848 12.3863 4.74946 12.1955 4.74946 11.9966Z" fill="white"/>
+                          </svg>
+                  </button>
+                 
+              </div>
+              <div id="hs-navbar-alignment"
+                  class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
+                  aria-labelledby="hs-navbar-alignment-collapse">
+                  <div class="flex flex-col gap-5 my-5 sm:flex-row sm:items-center sm:my-0 sm:ps-5">
+                      <a class="text-sm text-black hover:text-[#6A00FF] md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="index.html" aria-current="page">Home</a>
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Product
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 z-50 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="/sms.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  SMS
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="voice.html">
+                                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M13.5631 8.6643C13.5631 8.33299 13.8318 8.06435 14.1631 8.06435C14.4944 8.06435 14.763 8.33299 14.763 8.6643C14.763 10.6949 13.9327 12.5405 12.5951 13.878C11.4243 15.0488 9.8642 15.831 8.1315 16.0078V18.5H6.63152V16.0078C4.89882 15.8312 3.3387 15.049 2.16788 13.878C0.830331 12.5403 0 10.6947 0 8.6643C0 8.33299 0.268642 8.06435 0.599954 8.06435C0.931267 8.06435 1.19991 8.33299 1.19991 8.6643C1.19991 10.3636 1.89553 11.9089 3.01617 13.0295C4.13682 14.1502 5.68229 14.8458 7.38161 14.8458C9.08092 14.8458 10.6262 14.1502 11.7468 13.0295C12.8675 11.9089 13.5631 10.3636 13.5631 8.6643ZM7.38161 0.5C5.34063 0.5 3.67079 2.16984 3.67079 4.21081V8.6643C3.67079 10.7053 5.34063 12.3751 7.38161 12.3751C9.42258 12.3751 11.0924 10.7053 11.0924 8.6643V4.21062C11.0924 2.16984 9.42258 0.5 7.38161 0.5Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Voice
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="email.html">
+                                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M20.4545 3.40909C20.4545 2.505 20.0952 1.63773 19.4564 0.998182C18.8168 0.359318 17.9495 0 17.0455 0C13.4168 0 7.03773 0 3.40909 0C2.505 0 1.63773 0.359318 0.998182 0.998182C0.359318 1.63773 0 2.505 0 3.40909C0 5.78591 0 9.21409 0 11.5909C0 12.495 0.359318 13.3623 0.998182 14.0018C1.63773 14.6407 2.505 15 3.40909 15C7.03773 15 13.4168 15 17.0455 15C17.9495 15 18.8168 14.6407 19.4564 14.0018C20.0952 13.3623 20.4545 12.495 20.4545 11.5909C20.4545 9.21409 20.4545 5.78591 20.4545 3.40909ZM2.98295 5.30523C2.98295 5.30523 7.12091 8.61545 8.94954 10.078C9.69682 10.6759 10.7577 10.6759 11.505 10.078C13.3336 8.61545 17.4716 5.30523 17.4716 5.30523C17.7655 5.07 17.8132 4.64045 17.578 4.34659C17.3427 4.05273 16.9132 4.005 16.6193 4.24023C16.6193 4.24023 12.482 7.55045 10.6534 9.01364C10.4039 9.21273 10.0507 9.21273 9.80114 9.01364L3.83523 4.24023C3.54136 4.005 3.11182 4.05273 2.87659 4.34659C2.64136 4.64045 2.68909 5.07 2.98295 5.30523Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Call
+                              </a>
+      
+                          </div>
+                      </div>
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black hover:text-[#6A00FF]  hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Service
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" fill="#292929" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 "
+                                  href="/sms.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Web Development
+                              </a>
+                             
+      
+                          </div>
+                      </div>
+                      <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="about.html">About Us</a>
+      
+                      <a class="text-sm text-black hover:text-[#6A00FF]  md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="contact-us.html">Contact Us</a>
+                  </div>
+              </div>
+          </nav>
         </header>
         <!-- ========== END HEADER ========== -->
        
         <!-- hero section start from here -->
         <div class="container mx-auto relative">
-            <div class=" hero-section px-40">
+            <div class=" hero-section md:px-40 px-5">
                 <div class="container mx-auto">
                     
                     <!-- hero title start from here -->
                     <div class="text-center text-white pt-20 pb-40">
-                        <h1 class="text-6xl font-bold">
-                            Empower Your Outreach, Elevate Your Connectivity
+                        <h1 class="text-4xl md:text-6xl font-bold">
+                            Empower Your Outreach, <br> Elevate Your Connectivity
                         </h1>
-                        <p class="mt-5 w-1/2 mx-auto">
-                            Welcome to workroot, where innovation meets efficiency. Our comprehensive suite of communication services is designed to empower your business and elevate your connectivity. Explore the unique features of each service below:
+                        <p class="mt-5 md:w-1/2 mx-auto text-lg">
+                            From swift and personalized SMS campaigns to impactful automated calls and dynamic email marketing, we provide the tools you need to amplify your outreach efforts.
                         </p>
                         <div class="btn-container mt-10">
                             <button class="rounded-full flex mx-auto gap-2 py-2 px-5 bg-[#C7F9FF] text-black hero_cta">
@@ -184,11 +200,11 @@
 
         <!--who we are section-->
            <div class="bg-white">
-            <div class="container mx-auto px-20 py-5">
-                <h2 class="text-[#1A1A1A] font-bold text-6xl opacity-25 mt-10 mb-5 ">Who we are?
+            <div class="container mx-auto md:px-20 px-5 py-5">
+                <h2 class="text-[#1A1A1A] font-bold text-4xl md:text-6xl opacity-25 mt-10 mb-5 ">Who we are?
                 </h2>
-                <p class="text-[#404040] text-lg font-medium mt-3">At [Your Company Name], we are more than just a communication services provider - we are architects of connection and facilitators of engagement. Established with a passion for transforming how businesses connect with their audience, we bring a fusion of innovation, expertise, and commitment to every interaction.</p>
-                <p class="text-[#404040] text-lg font-medium mt-3">As a team, we embody diversity and collaboration, drawing strength from our collective experiences to push the boundaries of what's possible in the realm of communication technology.</p>
+                <p class="text-[#404040] md:text-lg font-medium mt-3">At [Your Company Name], we are more than just a communication services provider - we are architects of connection and facilitators of engagement. Established with a passion for transforming how businesses connect with their audience, we bring a fusion of innovation, expertise, and commitment to every interaction.</p>
+                <p class="text-[#404040] md:text-lg font-medium mt-3">As a team, we embody diversity and collaboration, drawing strength from our collective experiences to push the boundaries of what's possible in the realm of communication technology.</p>
                 <img src="img/about_us_img.png" class="mx-auto w-full mt-10" alt="about us image"/>
             </div>
            </div>
@@ -196,17 +212,17 @@
 
         <!--what we do section-->
         <div class="bg-white">
-            <div class="container mx-auto px-20 py-5">
-                <h2 class="text-[#1A1A1A] font-bold text-6xl opacity-25 mt-10 mb-5 ">What We Do?
+            <div class="container mx-auto px-5 md:px-20 py-5">
+                <h2 class="text-[#1A1A1A] font-bold text-4xl md:text-6xl opacity-25 mt-10 mb-5 ">What We Do?
                 </h2>
                 <div class="grid grid-cols-2 gap-10">
-                    <div>
-                        <h4 class="text-6xl mt-4 font-semibold text-[#1A1A1A]">At the Core of Connectivity</h4>
+                    <div class="md:col-span-2 col-span-2">
+                        <h4 class="text-4xl md:text-6xl mt-4 font-semibold text-[#1A1A1A]">At the Core of Connectivity</h4>
                         <p class="text-[#404040] font-medium mt-3">We specialize in providing a suite of cutting-edge communication services, including SMS, voice, and email solutions. Our services are crafted to empower businesses of all sizes, from startups seeking to establish their presence to enterprises aiming to revolutionize their communication strategies.</p>
                         
                     </div>
-                    <div>
-                        <h4 class="text-6xl mt-4 font-semibold text-[#1A1A1A]">At the Core of Connectivity</h4>
+                    <div class="md:col-span-2 col-span-2">
+                        <h4 class="text-4xl md:text-6xl mt-4 font-semibold text-[#1A1A1A]">At the Core of Connectivity</h4>
                         <p class="text-[#404040] font-medium mt-3">We specialize in providing a suite of cutting-edge communication services, including SMS, voice, and email solutions. Our services are crafted to empower businesses of all sizes, from startups seeking to establish their presence to enterprises aiming to revolutionize their communication strategies.</p>
                     </div>
                 </div>
@@ -216,10 +232,10 @@
          
         <!--our aim section-->
         <div class="bg-white">
-            <div class="container mx-auto px-20 py-5">
-                <h2 class="text-[#1A1A1A] font-bold text-6xl opacity-25 mt-10 mb-5 ">What We Do?
+            <div class="container mx-auto px-5 md:px-20 py-5">
+                <h2 class="text-[#1A1A1A] font-bold text-4xl md:text-6xl opacity-25 mt-10 mb-5 ">What We Do?
                 </h2>
-                <div class="flex pt-5">
+                <div class="flex pt-5 flex-wrap md:flex-nowrap">
                     <div class="border-e border-gray-200 dark:border-neutral-700">
                       <nav class="flex flex-col space-y-2" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
                         <button type="button" class="hs-tab-active:border-blue-500 hs-tab-active:text-blue-600 dark:hs-tab-active:text-blue-600 py-1 pe-4 inline-flex items-center gap-x-2 border-e-2 border-transparent whitespace-nowrap text-lg text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none  active" id="vertical-tab-with-border-item-1" aria-selected="true" data-hs-tab="#vertical-tab-with-border-1" aria-controls="vertical-tab-with-border-1" role="tab">
@@ -258,67 +274,67 @@
       
         
         <!--contact us-->
-       <div class="bg-white py-20">
-        <div class="container mb-10">
-            <div class="flex gap-10 px-20 grid grid-cols-2">
-                <div>
-                    <p class="text-lg font-semibold">Connect with us</p>
-                    <h4 class="text-8xl my-3 font-semibold">
-                        <span class="text-[#6A00FF]">Connecting</span> <br>Dreams, <br> Answering <br>Queries
-                    </h4>
-                </div>
-                <div>
-                    <div class="flex gap-3 mt-5">
-                        <div class="w-full">
-                            <input type="text"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
-                                placeholder="First Name*">
-                        </div>
-                        <div class="w-full">
-                            <input type="text"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
-                                placeholder="Last Name*">
-                        </div>
+        <div class="bg-white md:py-20 py-10">
+            <div class="container mb-10">
+                <div class="grid md:grid-cols-2 gap-10 px-5 md:px-20">
+                    <div>
+                        <p class="text-2xl font-semibold">Connect with us</p>
+                        <h4 class="text-6xl md:text-8xl my-3 font-bold">
+                            <span class="bg-gradient-to-r from-[#6A00FF] to-[#B569FF] bg-clip-text text-transparent">Connecting</span> <br>Dreams, <br> Answering <br>Queries
+                        </h4>
                     </div>
-                    <div class="flex gap-3 mt-3">
-                        <div class="w-full">
-                            <input type="email"
-                                class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
-                                placeholder="Email*">
+                    <div>
+                        <div class="flex gap-3 mt-5">
+                            <div class="w-full">
+                                <input type="text"
+                                    class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                                    placeholder="First Name*">
+                            </div>
+                            <div class="w-full">
+                                <input type="text"
+                                    class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                                    placeholder="Last Name*">
+                            </div>
                         </div>
-                        <div class="w-full">
-                            <input type="text"
-                                class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
-                                placeholder="Mobile Number*">
+                        <div class="flex gap-3 mt-3">
+                            <div class="w-full">
+                                <input type="email"
+                                    class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                                    placeholder="Email*">
+                            </div>
+                            <div class="w-full">
+                                <input type="text"
+                                    class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
+                                    placeholder="Mobile Number*">
+                            </div>
                         </div>
-                    </div>
-                    <div class=" mt-3">
-                        <textarea
-                            class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-                            rows="3" placeholder="Enter Your Message"></textarea>
-                    </div>
-                    <div class="btn-container mt-8">
-                        <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
-                            <span>Get a quote</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
-                                <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
-                                </svg>
-                                
-                                
-                        </button>
+                        <div class=" mt-3">
+                            <textarea
+                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
+                                rows="3" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <div class="btn-container mt-8">
+                            <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
+                                <span>Get a quote</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
+                                    <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
+                                    </svg>
+                                    
+                                    
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-       </div>
+           </div>
         <!--contact us end-->
     <!-- ========== FOOTER ========== -->
     <div class="bg-[#F0F0F0]">
         <footer class="mt-auto w-full  mx-auto">
             <div class="py-10 px-4">
                 <!-- Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
                     <div class="flex items-center justify-center">
                         <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
                             href="#" aria-label="Brand">
@@ -425,14 +441,14 @@
                 <!-- End Grid -->
             </div>
     
-            <div class="py-3 bg-[#404040] px-5">
-                <div class="sm:flex sm:justify-between sm:items-center container mx-auto ">
+            <div class="py-3 bg-[#404040] px-4">
+                <div class="md:flex md:justify-between md:items-center container mx-auto ">
                     <div class="copyright_comment">
                         <p class="text-xs text-white"> © 2023 WorkRoot IT Solutions LLP™. All Rights Reserved.</p>
                     </div>
     
     
-                    <div class="flex flex-wrap justify-between items-center gap-3">
+                    <div class="flex flex-wrap justify-between items-center gap-3 mt-4 md:mt-0">
                         <!-- Social Brands -->
                         <div class="space-x-4">
                             <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"

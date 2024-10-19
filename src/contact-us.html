@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="./main.js"></script>
+</head>
+
+<body class="bg-[#6A00FF] overflow-x-hidden">
+    <div class="relative">
+        <div class="blur blur-2xl opacity-75 top-80 -z-10 h-1/6 w-1/2 rounded-full  bg-[#A64AFF] absolute -left-1/4"></div>
+        <div class="blur blur-2xl opacity-75 top-32 -z-10 h-1/4 w-1/3 rounded-full  bg-[#A64AFF] absolute -right-1/4"></div>
+        <div class="line-group absolute right-10 flex gap-5 opacity-50">
+            <div class="h-20 w-px border border-r-white border-dashed"></div>
+            <div class="h-40 w-px border border-r-white border-dashed"></div>
+            <div class="h-60 w-px border border-r-white border-dashed"></div>
+            <div class="h-40 w-px border border-r-white border-dashed"></div>
+            <div class="h-20 w-px border border-r-white border-dashed"></div>
+        </div>
+        
+          <!-- ========== HEADER ========== -->
+          <header
+          class="sticky top-5  inset-x-0 flex  container mx-auto z-50 lg:px-20 px-5 flex-wrap sm:justify-start sm:flex-nowrap py-1">
+          <nav class=" w-full backdrop-blur-md mx-auto rounded-[40px] bg-white/50 dark:bg-black/50 py-2 md:py-0 text-sm px-4 flex flex-wrap basis-full items-center justify-between">
+              <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+                  href="index.html">
+                  <div class="logo-container flex gap-2 items-center">
+                      <img src="./img/workroot.png" height="50" class="h-8" />
+                      <p class="text-black text-lg text-[#292929] dark:text-white font-semibold">Workroot</p>
+                  </div>
+              </a>
+              <div class="sm:order-3 flex items-center gap-x-2">
+                  <button type="button"
+                      class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                      id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
+                      aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
+                      <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="3" x2="21" y1="6" y2="6" />
+                          <line x1="3" x2="21" y1="12" y2="12" />
+                          <line x1="3" x2="21" y1="18" y2="18" />
+                      </svg>
+                      <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M18 6 6 18" />
+                          <path d="m6 6 12 12" />
+                      </svg>
+                      <span class="sr-only">Toggle</span>
+                  </button>
+                  <button type="button"
+                      class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium gap-x-2 py-2 px-3 bg-[#A64AFF] text-white font-medium text-sm text-neutral-800 rounded-full disabled:opacity-50 disabled:pointer-events-none">
+                      <span>Login</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="23.5" y="0.499512" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.499512)" stroke="white"/>
+                          <path d="M4.74946 11.9966C4.74946 11.7977 4.82848 11.6069 4.96913 11.4663C5.10978 11.3256 5.30055 11.2466 5.49946 11.2466L14.2865 11.2466L10.9995 8.30561C10.8525 8.17264 10.7642 7.98694 10.7538 7.78906C10.7433 7.59117 10.8116 7.3972 10.9437 7.2495C11.0758 7.10181 11.261 7.0124 11.4588 7.0008C11.6566 6.9892 11.851 7.05636 11.9995 7.18761L16.7495 11.4376C16.8283 11.508 16.8913 11.5942 16.9345 11.6906C16.9777 11.787 17 11.8915 17 11.9971C17 12.1028 16.9777 12.2072 16.9345 12.3036C16.8913 12.4 16.8283 12.4863 16.7495 12.5566L11.9995 16.8066C11.9262 16.8729 11.8405 16.9241 11.7473 16.9572C11.6542 16.9903 11.5554 17.0047 11.4567 16.9995C11.3579 16.9943 11.2612 16.9696 11.1721 16.9269C11.0829 16.8841 11.0031 16.8242 10.9372 16.7505C10.8713 16.6768 10.8206 16.5909 10.788 16.4975C10.7555 16.4042 10.7417 16.3053 10.7475 16.2066C10.7533 16.1079 10.7785 16.0114 10.8218 15.9225C10.865 15.8336 10.9254 15.7541 10.9995 15.6886L14.2865 12.7466L5.49946 12.7466C5.30055 12.7466 5.10978 12.6676 4.96913 12.5269C4.82848 12.3863 4.74946 12.1955 4.74946 11.9966Z" fill="white"/>
+                          </svg>
+                  </button>
+                  <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="dark">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg>
+                      </span>
+                    </button>
+                    <button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="light">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="4"></circle>
+                          <path d="M12 2v2"></path>
+                          <path d="M12 20v2"></path>
+                          <path d="m4.93 4.93 1.41 1.41"></path>
+                          <path d="m17.66 17.66 1.41 1.41"></path>
+                          <path d="M2 12h2"></path>
+                          <path d="M20 12h2"></path>
+                          <path d="m6.34 17.66-1.41 1.41"></path>
+                          <path d="m19.07 4.93-1.41 1.41"></path>
+                        </svg>
+                      </span>
+                    </button>
+              </div>
+              <div id="hs-navbar-alignment"
+                  class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
+                  aria-labelledby="hs-navbar-alignment-collapse">
+                  <div class="flex flex-col gap-5 my-5 sm:flex-row sm:items-center sm:my-0 sm:ps-5">
+                      <a class="text-sm text-black dark:text-white hover:text-[#6A00FF] dark:hover:text-[#A64AFF] md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="/src/index.html" aria-current="page">Home</a>
+                          
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black dark:text-white hover:text-[#6A00FF] dark:hover:text-[#A64AFF]  focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Product
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" class="dark:fill-white fill-[#292929]" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 z-50 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full dark:bg-[#292929]"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-eve nt">
+                               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:text-black focus:outline-none focus:bg-gray-100 "
+                                  href="/src/sms.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  SMS
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:text-black focus:outline-none focus:bg-gray-100 "
+                                  href="/src/voice.html">
+                                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M13.5631 8.6643C13.5631 8.33299 13.8318 8.06435 14.1631 8.06435C14.4944 8.06435 14.763 8.33299 14.763 8.6643C14.763 10.6949 13.9327 12.5405 12.5951 13.878C11.4243 15.0488 9.8642 15.831 8.1315 16.0078V18.5H6.63152V16.0078C4.89882 15.8312 3.3387 15.049 2.16788 13.878C0.830331 12.5403 0 10.6947 0 8.6643C0 8.33299 0.268642 8.06435 0.599954 8.06435C0.931267 8.06435 1.19991 8.33299 1.19991 8.6643C1.19991 10.3636 1.89553 11.9089 3.01617 13.0295C4.13682 14.1502 5.68229 14.8458 7.38161 14.8458C9.08092 14.8458 10.6262 14.1502 11.7468 13.0295C12.8675 11.9089 13.5631 10.3636 13.5631 8.6643ZM7.38161 0.5C5.34063 0.5 3.67079 2.16984 3.67079 4.21081V8.6643C3.67079 10.7053 5.34063 12.3751 7.38161 12.3751C9.42258 12.3751 11.0924 10.7053 11.0924 8.6643V4.21062C11.0924 2.16984 9.42258 0.5 7.38161 0.5Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Voice
+                              </a>
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:text-black focus:outline-none focus:bg-gray-100 "
+                                  href="/src/email.html">
+                                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M20.4545 3.40909C20.4545 2.505 20.0952 1.63773 19.4564 0.998182C18.8168 0.359318 17.9495 0 17.0455 0C13.4168 0 7.03773 0 3.40909 0C2.505 0 1.63773 0.359318 0.998182 0.998182C0.359318 1.63773 0 2.505 0 3.40909C0 5.78591 0 9.21409 0 11.5909C0 12.495 0.359318 13.3623 0.998182 14.0018C1.63773 14.6407 2.505 15 3.40909 15C7.03773 15 13.4168 15 17.0455 15C17.9495 15 18.8168 14.6407 19.4564 14.0018C20.0952 13.3623 20.4545 12.495 20.4545 11.5909C20.4545 9.21409 20.4545 5.78591 20.4545 3.40909ZM2.98295 5.30523C2.98295 5.30523 7.12091 8.61545 8.94954 10.078C9.69682 10.6759 10.7577 10.6759 11.505 10.078C13.3336 8.61545 17.4716 5.30523 17.4716 5.30523C17.7655 5.07 17.8132 4.64045 17.578 4.34659C17.3427 4.05273 16.9132 4.005 16.6193 4.24023C16.6193 4.24023 12.482 7.55045 10.6534 9.01364C10.4039 9.21273 10.0507 9.21273 9.80114 9.01364L3.83523 4.24023C3.54136 4.005 3.11182 4.05273 2.87659 4.34659C2.64136 4.64045 2.68909 5.07 2.98295 5.30523Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Call
+                              </a>
+      
+                          </div>
+                      </div>
+                      <div class=" hs-dropdown [--trigger:hover] relative inline-flex">
+                          <button id="hs-dropdown-hover-event" type="button"
+                              class="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-sm text-black dark:text-white hover:text-[#6A00FF] dark:hover:text-[#A64AFF] focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                              aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                              Service
+      
+                              <svg class="hs-dropdown-open:rotate-180" width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M0 0.25L7 0.25L3.5 5.75L0 0.25Z" class="dark:fill-white" fill="#292929" />
+                              </svg>
+      
+                          </button>
+      
+                          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full dark:bg-[#292929]"
+                              role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-white hover:bg-gray-100 dark:hover:text-black"
+                                  href="/src/webDevelopment.html">
+                                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.5882 0.5H1.58824C0.714706 0.5 0 1.21471 0 2.08824V12.1471C0 13.0206 0.714706 13.7353 1.58824 13.7353H9.79412L16.9412 18.5L15.8824 13.7353H19.5882C20.4618 13.7353 21.1765 13.0206 21.1765 12.1471V2.08824C21.1765 1.21471 20.4618 0.5 19.5882 0.5ZM4.76471 8.70588C3.88853 8.70588 3.17647 7.99382 3.17647 7.11765C3.17647 6.24147 3.88853 5.52941 4.76471 5.52941C5.64088 5.52941 6.35294 6.24147 6.35294 7.11765C6.35294 7.99382 5.64088 8.70588 4.76471 8.70588ZM10.5882 8.70588C9.71206 8.70588 9 7.99382 9 7.11765C9 6.24147 9.71206 5.52941 10.5882 5.52941C11.4644 5.52941 12.1765 6.24147 12.1765 7.11765C12.1765 7.99382 11.4644 8.70588 10.5882 8.70588ZM16.4118 8.70588C15.5356 8.70588 14.8235 7.99382 14.8235 7.11765C14.8235 6.24147 15.5356 5.52941 16.4118 5.52941C17.2879 5.52941 18 6.24147 18 7.11765C18 7.99382 17.2879 8.70588 16.4118 8.70588Z"
+                                          fill="#00829B" />
+                                  </svg>
+      
+                                  Web Development
+                              </a>
+                             
+      
+                          </div>
+                      </div>
+                      <a class="text-sm text-black dark:text-white hover:text-[#6A00FF] dark:hover:text-[#A64AFF]  md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="about.html">About Us</a>
+      
+                      <a class="text-sm text-black dark:text-white hover:text-[#6A00FF] dark:hover:text-[#A64AFF] md:py-4 focus:outline-none focus:text-neutral-300"
+                          href="contact-us.html">Contact Us</a>
+                  </div>
+              </div>
+          </nav>
+        </header>
+         <!-- ========== END HEADER ========== -->
+       
+        <!-- hero section start from here -->
+        <div class="container mx-auto relative">
+            <div class=" hero-section md:px-40 px-5">
+                <div class="container mx-auto">
+                    
+                    <!-- hero title start from here -->
+                    <div class="text-center text-white pt-20 pb-40">
+                        <h1 class="text-4xl md:text-6xl font-bold">
+                            Empower Your Outreach, <br> Elevate Your Connectivity
+                        </h1>
+                        <p class="mt-5 md:w-1/2 mx-auto text-lg">
+                            From swift and personalized SMS campaigns to impactful automated calls and dynamic email marketing, we provide the tools you need to amplify your outreach efforts.
+                        </p>
+                        <div class="btn-container mt-10">
+                            <button class="rounded-full flex mx-auto gap-2 py-2 px-5 bg-[#C7F9FF] text-black hero_cta">
+                                <span class="text-[#1A1A1A] font-semibold">Get a quote</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="#404040"/>
+                                    <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="#404040"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- hero title ends from here -->
+                   
+                </div>
+            </div>
+            <div class="line-group absolute bottom-0 items-end left-10 flex gap-5 opacity-50">
+                <div class="h-20 w-px border border-r-white border-dashed"></div>
+                <div class="h-40 w-px border border-r-white border-dashed"></div>
+                <div class="h-60 w-px border border-r-white border-dashed"></div>
+                <div class="h-40 w-px border border-r-white border-dashed"></div>
+                <div class="h-20 w-px border border-r-white border-dashed"></div>
+            </div>
+        </div>
+        <!-- hero section ends from here -->
+
+        
+
+        <!--what we do section-->
+        <div class="bg-white dark:bg-[#292929]">
+            <div class="container mx-auto px-5 md:px-20 py-10">
+               
+                <div class="grid grid-cols-2 gap-10">
+                    <div class="md:col-span-1 col-span-2">
+                        <div class="flex flex-col bg-[#F0F0F0] dark:bg-[#404040] rounded-xl">
+                            <img class="w-full h-auto rounded-t-xl" src="img/contact_us_img.png" alt="Card Image">
+                            <div class="p-4 md:p-5">
+                                <div>
+                                    <div class="flex gap-3 mt-5">
+                                        <div class="w-full">
+                                            <input type="text"
+                                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#404040]"
+                                                placeholder="First Name*">
+                                        </div>
+                                        <div class="w-full">
+                                            <input type="text"
+                                                class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#404040]"
+                                                placeholder="Last Name*">
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3 mt-3">
+                                        <div class="w-full">
+                                            <input type="email"
+                                                class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#404040]"
+                                                placeholder="Email*">
+                                        </div>
+                                        <div class="w-full">
+                                            <input type="text"
+                                                class="py-3 px-4 w-full block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#404040]"
+                                                placeholder="Mobile Number*">
+                                        </div>
+                                    </div>
+                                    <div class=" mt-3">
+                                        <textarea
+                                            class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#404040]"
+                                            rows="3" placeholder="Enter Your Message"></textarea>
+                                    </div>
+                                    <div class="btn-container mt-8">
+                                        <button class="rounded-full gap-3 py-2 px-5 bg-[#00829B] flex text-white hero_cta">
+                                            <span>Get a quote</span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)" stroke="white"/>
+                                                <path d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z" fill="white"/>
+                                                </svg>
+                                                
+                                                
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="flex md:col-span-1 col-span-2 flex-col gap-5">
+                        <div class="flex flex-col bg-white dark:bg-[#404040] border shadow-sm rounded-xl">
+                            <div class="px-5 pt-5  dark:hidden">
+                                <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.5714 11.4286H32.8571V7.14286C32.8571 3.20457 29.6526 0 25.7143 0H7.14286C3.20457 0 0 3.20457 0 7.14286V20C0 23.9274 3.18514 27.1234 7.10686 27.1429V32.8571C7.10686 33.4109 7.428 33.916 7.92972 34.1503C8.12229 34.2411 8.32857 34.2857 8.53543 34.2857C8.86343 34.2857 9.18857 34.1726 9.45086 33.9549L17.624 27.1429H18.5714C18.5714 31.0811 21.776 34.2857 25.7143 34.2857H30.208L36.2309 39.6389C36.4971 39.876 36.836 40 37.1789 40C37.3771 40 37.5766 39.9594 37.7634 39.8743C38.2766 39.644 38.6074 39.1337 38.6074 38.5714V34.2857C42.5291 34.2663 45.7143 31.0703 45.7143 27.1429V18.5714C45.7143 14.6331 42.5097 11.4286 38.5714 11.4286ZM18.5714 18.5714V24.2857H17.1069C16.772 24.2857 16.4486 24.4029 16.1914 24.6166L9.964 29.8074V25.7143C9.964 24.9246 9.32514 24.2857 8.53543 24.2857H7.14286C4.77943 24.2857 2.85714 22.3634 2.85714 20V7.14286C2.85714 4.77943 4.77943 2.85714 7.14286 2.85714H25.7143C28.0777 2.85714 30 4.77943 30 7.14286V11.4286H25.7143C21.776 11.4286 18.5714 14.6331 18.5714 18.5714ZM42.8571 27.1429C42.8571 29.5063 40.9349 31.4286 38.5714 31.4286H37.1789C36.3891 31.4286 35.7503 32.0674 35.7503 32.8571V35.3909L31.6989 31.7903C31.4383 31.5571 31.1006 31.4286 30.7503 31.4286H25.7143C23.3509 31.4286 21.4286 29.5063 21.4286 27.1429V18.5714C21.4286 16.208 23.3509 14.2857 25.7143 14.2857H38.5714C40.9349 14.2857 42.8571 16.208 42.8571 18.5714V27.1429Z"
+                                        fill="#404040" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="px-5 pt-5 dark:block hidden">
+                                <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.5714 11.4286H32.8571V7.14286C32.8571 3.20457 29.6526 0 25.7143 0H7.14286C3.20457 0 0 3.20457 0 7.14286V20C0 23.9274 3.18514 27.1234 7.10686 27.1429V32.8571C7.10686 33.4109 7.428 33.916 7.92972 34.1503C8.12229 34.2411 8.32857 34.2857 8.53543 34.2857C8.86343 34.2857 9.18857 34.1726 9.45086 33.9549L17.624 27.1429H18.5714C18.5714 31.0811 21.776 34.2857 25.7143 34.2857H30.208L36.2309 39.6389C36.4971 39.876 36.836 40 37.1789 40C37.3771 40 37.5766 39.9594 37.7634 39.8743C38.2766 39.644 38.6074 39.1337 38.6074 38.5714V34.2857C42.5291 34.2663 45.7143 31.0703 45.7143 27.1429V18.5714C45.7143 14.6331 42.5097 11.4286 38.5714 11.4286ZM18.5714 18.5714V24.2857H17.1069C16.772 24.2857 16.4486 24.4029 16.1914 24.6166L9.964 29.8074V25.7143C9.964 24.9246 9.32514 24.2857 8.53543 24.2857H7.14286C4.77943 24.2857 2.85714 22.3634 2.85714 20V7.14286C2.85714 4.77943 4.77943 2.85714 7.14286 2.85714H25.7143C28.0777 2.85714 30 4.77943 30 7.14286V11.4286H25.7143C21.776 11.4286 18.5714 14.6331 18.5714 18.5714ZM42.8571 27.1429C42.8571 29.5063 40.9349 31.4286 38.5714 31.4286H37.1789C36.3891 31.4286 35.7503 32.0674 35.7503 32.8571V35.3909L31.6989 31.7903C31.4383 31.5571 31.1006 31.4286 30.7503 31.4286H25.7143C23.3509 31.4286 21.4286 29.5063 21.4286 27.1429V18.5714C21.4286 16.208 23.3509 14.2857 25.7143 14.2857H38.5714C40.9349 14.2857 42.8571 16.208 42.8571 18.5714V27.1429Z" fill="#00E5FF"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="px-4 md:px-5 pb-5">
+                                <h3 class="text-lg font-bold text-gray-800 dark:text-[white]">
+                                    contactus@email.com
+                                </h3>
+                                <div class="btn-container mt-5">
+                                    <button class="rounded-full gap-3 py-2 px-5 bg-[#A64AFF] flex text-white hero_cta">
+                                        <span>Get a quote</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)"
+                                                stroke="white" />
+                                            <path
+                                                d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z"
+                                                fill="white" />
+                                        </svg>
+                    
+                    
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-white dark:bg-[#404040] border shadow-sm rounded-xl">
+                            <div class="px-5 pt-5  dark:hidden">
+                                <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.5714 11.4286H32.8571V7.14286C32.8571 3.20457 29.6526 0 25.7143 0H7.14286C3.20457 0 0 3.20457 0 7.14286V20C0 23.9274 3.18514 27.1234 7.10686 27.1429V32.8571C7.10686 33.4109 7.428 33.916 7.92972 34.1503C8.12229 34.2411 8.32857 34.2857 8.53543 34.2857C8.86343 34.2857 9.18857 34.1726 9.45086 33.9549L17.624 27.1429H18.5714C18.5714 31.0811 21.776 34.2857 25.7143 34.2857H30.208L36.2309 39.6389C36.4971 39.876 36.836 40 37.1789 40C37.3771 40 37.5766 39.9594 37.7634 39.8743C38.2766 39.644 38.6074 39.1337 38.6074 38.5714V34.2857C42.5291 34.2663 45.7143 31.0703 45.7143 27.1429V18.5714C45.7143 14.6331 42.5097 11.4286 38.5714 11.4286ZM18.5714 18.5714V24.2857H17.1069C16.772 24.2857 16.4486 24.4029 16.1914 24.6166L9.964 29.8074V25.7143C9.964 24.9246 9.32514 24.2857 8.53543 24.2857H7.14286C4.77943 24.2857 2.85714 22.3634 2.85714 20V7.14286C2.85714 4.77943 4.77943 2.85714 7.14286 2.85714H25.7143C28.0777 2.85714 30 4.77943 30 7.14286V11.4286H25.7143C21.776 11.4286 18.5714 14.6331 18.5714 18.5714ZM42.8571 27.1429C42.8571 29.5063 40.9349 31.4286 38.5714 31.4286H37.1789C36.3891 31.4286 35.7503 32.0674 35.7503 32.8571V35.3909L31.6989 31.7903C31.4383 31.5571 31.1006 31.4286 30.7503 31.4286H25.7143C23.3509 31.4286 21.4286 29.5063 21.4286 27.1429V18.5714C21.4286 16.208 23.3509 14.2857 25.7143 14.2857H38.5714C40.9349 14.2857 42.8571 16.208 42.8571 18.5714V27.1429Z"
+                                        fill="#404040" fill-opacity="0.5" />
+                                </svg>
+                            </div>
+                            <div class="px-5 pt-5 dark:block hidden">
+                                <svg width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M38.5714 11.4286H32.8571V7.14286C32.8571 3.20457 29.6526 0 25.7143 0H7.14286C3.20457 0 0 3.20457 0 7.14286V20C0 23.9274 3.18514 27.1234 7.10686 27.1429V32.8571C7.10686 33.4109 7.428 33.916 7.92972 34.1503C8.12229 34.2411 8.32857 34.2857 8.53543 34.2857C8.86343 34.2857 9.18857 34.1726 9.45086 33.9549L17.624 27.1429H18.5714C18.5714 31.0811 21.776 34.2857 25.7143 34.2857H30.208L36.2309 39.6389C36.4971 39.876 36.836 40 37.1789 40C37.3771 40 37.5766 39.9594 37.7634 39.8743C38.2766 39.644 38.6074 39.1337 38.6074 38.5714V34.2857C42.5291 34.2663 45.7143 31.0703 45.7143 27.1429V18.5714C45.7143 14.6331 42.5097 11.4286 38.5714 11.4286ZM18.5714 18.5714V24.2857H17.1069C16.772 24.2857 16.4486 24.4029 16.1914 24.6166L9.964 29.8074V25.7143C9.964 24.9246 9.32514 24.2857 8.53543 24.2857H7.14286C4.77943 24.2857 2.85714 22.3634 2.85714 20V7.14286C2.85714 4.77943 4.77943 2.85714 7.14286 2.85714H25.7143C28.0777 2.85714 30 4.77943 30 7.14286V11.4286H25.7143C21.776 11.4286 18.5714 14.6331 18.5714 18.5714ZM42.8571 27.1429C42.8571 29.5063 40.9349 31.4286 38.5714 31.4286H37.1789C36.3891 31.4286 35.7503 32.0674 35.7503 32.8571V35.3909L31.6989 31.7903C31.4383 31.5571 31.1006 31.4286 30.7503 31.4286H25.7143C23.3509 31.4286 21.4286 29.5063 21.4286 27.1429V18.5714C21.4286 16.208 23.3509 14.2857 25.7143 14.2857H38.5714C40.9349 14.2857 42.8571 16.208 42.8571 18.5714V27.1429Z" fill="#00E5FF"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="px-4 md:px-5 pb-5">
+                                <h3 class="text-lg font-bold text-gray-800 dark:text-[white]">
+                                    contactus@email.com
+                                </h3>
+                                <div class="btn-container mt-5">
+                                    <button class="rounded-full gap-3 py-2 px-5 bg-[#A64AFF] flex text-white hero_cta">
+                                        <span>Get a quote</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="23.5" y="0.5" width="23.001" height="23" rx="11.5" transform="rotate(90 23.5 0.5)"
+                                                stroke="white" />
+                                            <path
+                                                d="M4.74946 11.9971C4.74946 11.7982 4.82848 11.6074 4.96913 11.4668C5.10978 11.3261 5.30055 11.2471 5.49946 11.2471L14.2865 11.2471L10.9995 8.30609C10.8525 8.17313 10.7642 7.98743 10.7538 7.78954C10.7433 7.59166 10.8116 7.39769 10.9437 7.24999C11.0758 7.1023 11.261 7.01288 11.4588 7.00129C11.6566 6.98969 11.851 7.05685 11.9995 7.18809L16.7495 11.4381C16.8283 11.5084 16.8913 11.5947 16.9345 11.6911C16.9777 11.7875 17 11.892 17 11.9976C17 12.1032 16.9777 12.2077 16.9345 12.3041C16.8913 12.4005 16.8283 12.4867 16.7495 12.5571L11.9995 16.8071C11.9262 16.8734 11.8405 16.9246 11.7473 16.9577C11.6542 16.9908 11.5554 17.0052 11.4567 17C11.3579 16.9947 11.2612 16.9701 11.1721 16.9273C11.0829 16.8846 11.0031 16.8247 10.9372 16.751C10.8713 16.6773 10.8206 16.5913 10.788 16.498C10.7555 16.4047 10.7417 16.3058 10.7475 16.2071C10.7533 16.1084 10.7785 16.0118 10.8218 15.9229C10.865 15.834 10.9254 15.7546 10.9995 15.6891L14.2865 12.7471L5.49946 12.7471C5.30055 12.7471 5.10978 12.6681 4.96913 12.5274C4.82848 12.3868 4.74946 12.196 4.74946 11.9971Z"
+                                                fill="white" />
+                                        </svg>
+                    
+                    
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           </div>
+        <!--what we do section end-->
+         
+      
+      
+    <!-- ========== FOOTER ========== -->
+    <div class="bg-[#F0F0F0] dark:bg-[#1A1A1A]">
+        <footer class="mt-auto w-full  mx-auto">
+            <div class="py-10 px-4">
+                <!-- Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                    <div class="flex items-center justify-center">
+                        <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
+                            href="#" aria-label="Brand">
+                            <div class="logo-container flex gap-2 items-center">
+                                <img src="./img/workroot.png" height="50" class="h-12" />
+                                <p class="text-black text-xl text-[#292929] dark:text-white font-semibold">Workroot</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- End Col -->
+    
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#1A1A1A] dark:text-white">Features</h4>
+    
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="inline-flex gap-x-2 text-[#404040] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF] dark:text-[#E0E0E0]"
+                                    href="#">Instant Delivery</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Personalization</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Reliability</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Automation</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Customer Support</a></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+    
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#1A1A1A] dark:text-white">Resources</h4>
+    
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Pricing</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">FAQs</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Customer Engagement</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] dark:text-[#E0E0E0] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF]"
+                                    href="#">Employee Communication</a></p>
+                        </div>
+                    </div>
+                    <!-- End Col -->
+    
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#1A1A1A] dark:text-white">Company</h4>
+    
+                        <div class="mt-3 grid space-y-3 text-sm">
+                            <p><a class="inline-flex gap-x-2 text-[#404040] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF] dark:text-[#E0E0E0]"
+                                    href="#">About Us</a></p>
+                            <p><a class="inline-flex gap-x-2 text-[#404040] hover:text-[#6A00FF] focus:outline-none focus:text-[#6A00FF] dark:text-[#E0E0E0]"
+                                    href="#">Contact Us</a></p>
+                            <div>
+                                <h4 class="text-lg mt-2 mb-3 font-semibold text-[#1A1A1A] dark:text-[#E0E0E0]">Company</h4>
+                                <div class="space-x-4">
+                                    <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                        href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z"
+                                                fill="#404040" class="dark:fill-[#E0E0E0]"/>
+                                        </svg>
+    
+                                    </a>
+                                    <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                        href="#">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z"
+                                                fill="#404040" class="dark:fill-[#E0E0E0]"/>
+                                        </svg>
+    
+                                    </a>
+                                    <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                        href="#">
+                                        <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.46 2C20.69 2.35 19.86 2.58 19 2.69C19.88 2.16 20.56 1.32 20.88 0.31C20.05 0.81 19.13 1.16 18.16 1.36C17.37 0.5 16.26 0 15 0C12.65 0 10.73 1.92 10.73 4.29C10.73 4.63 10.77 4.96 10.84 5.27C7.28004 5.09 4.11004 3.38 2.00004 0.79C1.63004 1.42 1.42004 2.16 1.42004 2.94C1.42004 4.43 2.17004 5.75 3.33004 6.5C2.62004 6.5 1.96004 6.3 1.38004 6V6.03C1.38004 8.11 2.86004 9.85 4.82004 10.24C4.19077 10.4122 3.53013 10.4362 2.89004 10.31C3.16165 11.1625 3.69358 11.9084 4.41106 12.4429C5.12854 12.9775 5.99549 13.2737 6.89004 13.29C5.37367 14.4904 3.49404 15.1393 1.56004 15.13C1.22004 15.13 0.880039 15.11 0.540039 15.07C2.44004 16.29 4.70004 17 7.12004 17C15 17 19.33 10.46 19.33 4.79C19.33 4.6 19.33 4.42 19.32 4.23C20.16 3.63 20.88 2.87 21.46 2Z"
+                                                fill="#404040" class="dark:fill-[#E0E0E0]"/>
+                                        </svg>
+    
+                                    </a>
+                                    <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                        href="#">
+                                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 10L13.19 7L8 4V10ZM19.56 2.17C19.69 2.64 19.78 3.27 19.84 4.07C19.91 4.87 19.94 5.56 19.94 6.16L20 7C20 9.19 19.84 10.8 19.56 11.83C19.31 12.73 18.73 13.31 17.83 13.56C17.36 13.69 16.5 13.78 15.18 13.84C13.88 13.91 12.69 13.94 11.59 13.94L10 14C5.81 14 3.2 13.84 2.17 13.56C1.27 13.31 0.69 12.73 0.44 11.83C0.31 11.36 0.22 10.73 0.16 9.93C0.0900001 9.13 0.0599999 8.44 0.0599999 7.84L0 7C0 4.81 0.16 3.2 0.44 2.17C0.69 1.27 1.27 0.69 2.17 0.44C2.64 0.31 3.5 0.22 4.82 0.16C6.12 0.0899998 7.31 0.0599999 8.41 0.0599999L10 0C14.19 0 16.8 0.16 17.83 0.44C18.73 0.69 19.31 1.27 19.56 2.17Z"
+                                                fill="#404040" class="dark:fill-[#E0E0E0]"/>
+                                        </svg>
+    
+    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- End Grid -->
+            </div>
+    
+            <div class="py-3 bg-[#404040] px-4">
+                <div class="md:flex md:justify-between md:items-center container mx-auto ">
+                    <div class="copyright_comment">
+                        <p class="text-xs text-white"> © 2023 WorkRoot IT Solutions LLP™. All Rights Reserved.</p>
+                    </div>
+    
+    
+                    <div class="flex flex-wrap justify-between items-center gap-3 mt-4 md:mt-0">
+                        <!-- Social Brands -->
+                        <div class="space-x-4">
+                            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z"
+                                        fill="white" />
+                                </svg>
+    
+                            </a>
+                            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z"
+                                        fill="white" />
+                                </svg>
+    
+                            </a>
+                            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                href="#">
+                                <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.46 2C20.69 2.35 19.86 2.58 19 2.69C19.88 2.16 20.56 1.32 20.88 0.31C20.05 0.81 19.13 1.16 18.16 1.36C17.37 0.5 16.26 0 15 0C12.65 0 10.73 1.92 10.73 4.29C10.73 4.63 10.77 4.96 10.84 5.27C7.28004 5.09 4.11004 3.38 2.00004 0.79C1.63004 1.42 1.42004 2.16 1.42004 2.94C1.42004 4.43 2.17004 5.75 3.33004 6.5C2.62004 6.5 1.96004 6.3 1.38004 6V6.03C1.38004 8.11 2.86004 9.85 4.82004 10.24C4.19077 10.4122 3.53013 10.4362 2.89004 10.31C3.16165 11.1625 3.69358 11.9084 4.41106 12.4429C5.12854 12.9775 5.99549 13.2737 6.89004 13.29C5.37367 14.4904 3.49404 15.1393 1.56004 15.13C1.22004 15.13 0.880039 15.11 0.540039 15.07C2.44004 16.29 4.70004 17 7.12004 17C15 17 19.33 10.46 19.33 4.79C19.33 4.6 19.33 4.42 19.32 4.23C20.16 3.63 20.88 2.87 21.46 2Z"
+                                        fill="white" />
+                                </svg>
+    
+                            </a>
+                            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                                href="#">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 10L13.19 7L8 4V10ZM19.56 2.17C19.69 2.64 19.78 3.27 19.84 4.07C19.91 4.87 19.94 5.56 19.94 6.16L20 7C20 9.19 19.84 10.8 19.56 11.83C19.31 12.73 18.73 13.31 17.83 13.56C17.36 13.69 16.5 13.78 15.18 13.84C13.88 13.91 12.69 13.94 11.59 13.94L10 14C5.81 14 3.2 13.84 2.17 13.56C1.27 13.31 0.69 12.73 0.44 11.83C0.31 11.36 0.22 10.73 0.16 9.93C0.0900001 9.13 0.0599999 8.44 0.0599999 7.84L0 7C0 4.81 0.16 3.2 0.44 2.17C0.69 1.27 1.27 0.69 2.17 0.44C2.64 0.31 3.5 0.22 4.82 0.16C6.12 0.0899998 7.31 0.0599999 8.41 0.0599999L10 0C14.19 0 16.8 0.16 17.83 0.44C18.73 0.69 19.31 1.27 19.56 2.17Z"
+                                        fill="white" />
+                                </svg>
+    
+    
+                            </a>
+                        </div>
+                        <!-- End Social Brands -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- ========== END FOOTER ========== -->
+    </div>
+    
+    
+    <script src="../node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
